@@ -412,7 +412,6 @@
 
         <div class="footer-soc-media">
           <p class="footer-soc-media-title">Social media</p>
-
           <ul class="footer-soc-media-icons list">
             <li class="footer-icons-item">
               <a href="" class="footer-icons-item-link">
@@ -444,15 +443,59 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-form">
+          <p class="footer-form-title">Subscribe</p>
+          <form class="subscribe-list">
+            <input
+              class="form-input"
+              type="text"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="subscribe-button">
+              <p class="subscribe-button-text">Subscribe</p>
+              <svg class="paper-plane" width="24" height="24">
+                <use href="./images/icons.svg#icon-paper-plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="modal modal-window">
         <button class="modal-close-button" data-modal-close type="button">
           <svg class="close-button" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p>Leave your contacts and we will call you back</p>
+        <form class="modal-window-form">
+          <label class="modal-window-title"> Name <input class="form-input-modal" type="text"</label>
+          <label>
+            Phone
+            <input class="form-input-modal" type="text" />
+          </label>
+          <label>
+            Email
+            <input class="form-input-modal" type="text" />
+          </label>
+          <label>
+            Comment
+            <input class="form-input-modal" type="text" />
+          </label>
+          <label>
+            <input class="form-input-modal" type="text" />
+          </label>
+          <button class="modal-send-button" type="submit">
+            Send
+            <svg class="" width="" height="">
+              <use href=""></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
