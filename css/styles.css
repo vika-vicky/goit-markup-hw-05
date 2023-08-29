@@ -281,9 +281,16 @@ address {
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    background-color: #2e2f42;
-    padding: 8px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: #ffffff;
     font-family: inherit;
+}
+.form-input::placeholder {
+    color: #ffffff;
 }
 
 .subscribe-button {
@@ -300,6 +307,12 @@ address {
     align-items: center;
     gap: 16px;
     border: none;
+    min-width: 165px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -309,15 +322,8 @@ address {
     background-color: var(--ocean);
 }
 
-.subscribe-button-text {
-    color: var(--white, #FFF);
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.04em;
+.paper-plane {
+    margin-left: 16px;
 }
 
 /* hero section */
