@@ -471,31 +471,58 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <p>Leave your contacts and we will call you back</p>
-        <form class="modal-window-form">
-          <label class="modal-window-title"> Name <input class="form-input-modal" type="text"</label>
-          <label>
+        
+          
+          <form class="modal-window-form">
+            <p class="modal-call-to-action">
+              Leave your contacts and we will call you back
+            </p>
+            <label class="modal-window-title">
+            Name
+              <input
+                class="form-input-modal"
+                type="text"
+                name="username"
+                placeholder=""
+                autofocus
+            /></label>
+            <label class="modal-window-title">
             Phone
-            <input class="form-input-modal" type="text" />
-          </label>
-          <label>
+              <input
+                class="form-input-modal"
+                type="tel"
+                name="phone-number"
+                placeholder=" "
+              />
+            </label>
+            <label class="modal-window-title">
             Email
-            <input class="form-input-modal" type="text" />
-          </label>
-          <label>
-            Comment
-            <input class="form-input-modal" type="text" />
-          </label>
-          <label>
-            <input class="form-input-modal" type="text" />
-          </label>
-          <button class="modal-send-button" type="submit">
-            Send
-            <svg class="" width="" height="">
-              <use href=""></use>
-            </svg>
-          </button>
-        </form>
+              <input
+                class="form-input-modal"
+                type="email"
+                name="email-address"
+                placeholder=" "
+              />
+            </label>
+            <label class="modal-window-title">
+              Comment
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="textarea"
+              ></textarea>
+            </label>
+            <label class="checkbox-privacy">
+              <input type="checkbox" name="privacy" value="" />
+              I accept the terms and conditions of the <a class="privacy-text" href="">Privacy Policy</a>
+            </label>
+            <button class="modal-send-button" type="submit">
+              Send
+              <svg class="" width="" height="">
+                <use href=""></use>
+              </svg>
+            </button>
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
