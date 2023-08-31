@@ -610,7 +610,7 @@ address {
     color: var(--iris, #4D5AE5);
 }
 
-.form-input-modal-checkbox:checked + .user-privacy >
+.form-input-modal-checkbox:checked + .checkbox-label >
 .checkbox-icon {
     background-color: var(--ocean);
     border: none;
