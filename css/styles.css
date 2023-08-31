@@ -529,12 +529,6 @@ address {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input-modal:checked + .user-privacy > .checkbox-icon {
-    background-color: var(--ocean);
-    border: none;
-    fill: var(--cloud);
-}
-
 .modal-form-icon {
     position: absolute;
     left: 16px;
@@ -570,13 +564,19 @@ address {
 .checkbox-privacy {
     display: block;
     margin-bottom: 24px;
-    gap: 8px;
     text-align: center;
+    padding: 0;
+}
+
+.form-input-modal-checkbox{
+    width: 16px;
+    height: 16px;
+    stroke-width: 1px;
+    stroke: var(--navy-blue-modal, rgba(46, 47, 66, 0.4));
 }
 
 .checkbox-label {
     display: block;
-    font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -599,6 +599,12 @@ address {
 
 .privacy-text {
     color: var(--iris, #4D5AE5);
+}
+
+.form-input-modal-checkbox:checked {
+    background-color: var(--ocean);
+    border: none;
+    fill: var(--cloud);
 }
 
 .modal-send-button {
