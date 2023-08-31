@@ -529,6 +529,10 @@ address {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input-modal:focus {
+    border-color: #4D5AE5;
+}
+
 .modal-form-icon {
     position: absolute;
     left: 16px;
@@ -537,8 +541,12 @@ address {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input-modal:focus + .modal-form-icon {
+    fill: #4D5AE5;
+}
+
 .modal-window-form-item-comment {
-    margin-bottom: 16px
+    margin-bottom: 16px;
 }
 
 .modal-comment {
@@ -588,6 +596,7 @@ address {
 .checkbox-icon {
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -601,7 +610,8 @@ address {
     color: var(--iris, #4D5AE5);
 }
 
-.form-input-modal-checkbox:checked {
+.form-input-modal-checkbox:checked + .user-privacy >
+.checkbox-icon {
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
@@ -620,6 +630,7 @@ address {
     border: none;
     border-radius: 4px;
     font-size: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: auto;
 }
@@ -635,7 +646,7 @@ address {
 }
 
 .what-we-do-section {
-    padding: 120px 0;
+    padding: 0 0 120px 0;
 }
 
 .what-we-do-title {
