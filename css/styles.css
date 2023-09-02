@@ -318,10 +318,6 @@ address {
     background-color: var(--ocean);
 }
 
-.paper-plane {
-    margin-left: 16px;
-}
-
 /* hero section */
 .hero-section {
     background-color: var(--navy-blue);
@@ -541,7 +537,7 @@ address {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input-modal:focus + .modal-form-icon {
+.form-input-modal:focus+.modal-form-icon {
     fill: #4D5AE5;
 }
 
@@ -576,7 +572,7 @@ address {
     padding: 0;
 }
 
-.form-input-modal-checkbox{
+.form-input-modal-checkbox {
     width: 16px;
     height: 16px;
     stroke-width: 1px;
@@ -610,8 +606,7 @@ address {
     color: var(--iris, #4D5AE5);
 }
 
-.form-input-modal-checkbox:checked + .checkbox-label >
-.checkbox-icon {
+.form-input-modal-checkbox:checked+.checkbox-label>.checkbox-icon {
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
